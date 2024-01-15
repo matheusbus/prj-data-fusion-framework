@@ -41,7 +41,6 @@ public final class VIWLoginFrame extends VIWBaseFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("DataFusion Framework [login]");
-        setType(java.awt.Window.Type.UTILITY);
 
         pnlMain.setPreferredSize(new java.awt.Dimension(350, 400));
 
@@ -190,6 +189,6 @@ public final class VIWLoginFrame extends VIWBaseFrame {
         
         setLocationRelativeTo(null);
         setResizable(false);
-        setSize(365, 400);
+        setSize(365, 500);
     }
 }
