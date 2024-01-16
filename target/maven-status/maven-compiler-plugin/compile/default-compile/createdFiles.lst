@@ -1,11 +1,13 @@
 br\com\datafusion\database\manager\INFDatabaseType.class
 br\com\datafusion\infra\user\UserStatus.class
 br\com\datafusion\database\connection\INFConnectionNoRelational.class
+br\com\datafusion\view\VIWConfigFrame$6.class
 br\com\datafusion\database\query\INFQueryFactory.class
 br\com\datafusion\database\manager\INFConnectionManager.class
 br\com\datafusion\view\VIWLoginFrame.class
 br\com\datafusion\database\connection\specific\INFConnectionMySQL.class
 br\com\datafusion\core\validator\INFStructureValidator.class
+br\com\datafusion\view\VIWConfigFrame$3.class
 br\com\datafusion\database\connection\specific\INFConnectionOracle.class
 br\com\datafusion\core\field\INFTableFieldFactory.class
 br\com\datafusion\database\query\INFQueryNoRelational.class
@@ -24,11 +26,12 @@ br\com\datafusion\core\validator\INFStructureValidatorFactory$1.class
 br\com\datafusion\infra\user\UserManager.class
 br\com\datafusion\database\connection\specific\INFConnectionSQLServer.class
 br\com\datafusion\database\connection\specific\INFConnectionRedisDB.class
+br\com\datafusion\view\VIWConfigFrame$2.class
+br\com\datafusion\view\VIWConfigFrame$5.class
 br\com\datafusion\core\validator\INFStructureValidatorFactory.class
 br\com\datafusion\database\connection\INFConnectionType.class
 br\com\datafusion\core\entity\INFEntityClassBuilder.class
 br\com\datafusion\core\validator\specific\INFStructureValidatorPostgreSQL$1.class
-br\com\datafusion\view\VIWConfigurationFrame.class
 br\com\datafusion\core\field\INFCollectionFieldType.class
 br\com\datafusion\core\entity\INFEntityClass.class
 br\com\datafusion\database\query\INFQueryFactory$1.class
@@ -36,11 +39,13 @@ br\com\datafusion\core\validator\INFStructureValidatorRelational.class
 br\com\datafusion\infra\INFDefineTbAtendimento.class
 br\com\datafusion\database\connection\specific\INFConnectionPostgreSQL.class
 br\com\datafusion\core\field\INFFieldException.class
+br\com\datafusion\view\VIWConfigFrame$4.class
 br\com\datafusion\view\VIWLoginFrame$1.class
 br\com\datafusion\core\entity\INFEntityDefinitionImpl.class
 br\com\datafusion\core\entity\INFEntityTableDefinition.class
 br\com\datafusion\core\entity\INFEntityDefinition.class
 br\com\datafusion\core\field\INFTableFieldImpl.class
+br\com\datafusion\view\VIWConfigFrame$1.class
 br\com\datafusion\core\record\INFRecord.class
 br\com\datafusion\database\pool\INFConnectionPoolRelational.class
 br\com\datafusion\database\query\INFQuery.class
@@ -49,7 +54,6 @@ br\com\datafusion\database\connection\specific\INFConnectionMongoDB.class
 br\com\datafusion\core\field\INFTableFieldType.class
 br\com\datafusion\database\manager\INFConnectionProperties.class
 br\com\datafusion\core\field\INFCollectionField.class
-br\com\datafusion\view\VIWConfigurationFrame$1.class
 br\com\datafusion\core\CNVExecStagesManager.class
 br\com\datafusion\infra\user\User.class
 br\com\datafusion\core\field\INFTableField.class
@@ -58,4 +62,5 @@ br\com\datafusion\core\exceptions\INFEntityException.class
 br\com\datafusion\core\field\INFCollectionFieldImpl.class
 br\com\datafusion\database\pool\INFConnectionPool.class
 br\com\datafusion\core\validator\INFStructureValidator$1.class
+br\com\datafusion\view\VIWConfigFrame.class
 br\com\datafusion\core\entity\INFEntityTableClass.class
