@@ -4,7 +4,6 @@
  */
 package br.com.datafusion.database.connection;
 
-import java.util.logging.Logger;
 
 /**
  *

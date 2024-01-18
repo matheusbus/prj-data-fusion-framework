@@ -15,9 +15,18 @@ public abstract class INFEntityClass {
     
     protected INFEntityDefinition entityDefinition;
     private List<INFField> fields;
+    protected String entityName;
 
     public INFEntityClass(INFEntityDefinition entityDefinition) {
         this.entityDefinition = entityDefinition;
+    }
+
+    public String getEntityName() {
+        return entityName;
+    }
+
+    public void setEntityName(String entityName) {
+        this.entityName = entityName;
     }
     
     public void addField(INFField field) {

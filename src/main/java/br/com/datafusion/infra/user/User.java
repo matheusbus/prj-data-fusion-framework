@@ -4,7 +4,7 @@
  */
 package br.com.datafusion.infra.user;
 
-import java.io.Serializable;
+import java.lang.annotation.Documented;
 import java.time.LocalDateTime;
 import java.util.Objects;
 import javax.persistence.Column;
