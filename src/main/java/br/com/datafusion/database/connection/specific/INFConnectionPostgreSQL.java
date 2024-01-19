@@ -33,7 +33,7 @@ public class INFConnectionPostgreSQL extends INFConnectionRelational {
     }
     
     @Override
-    protected boolean existsEntity(String entityName) {
+    public boolean existsEntity(String entityName) {
         if(entityName.contains(".")) {
             String entity[] = entityName.split(".");
             return schemaExists(entity[0]) && tableExists(entity[0], entity[1]);

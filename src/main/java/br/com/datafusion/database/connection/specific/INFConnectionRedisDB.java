@@ -20,7 +20,7 @@ public class INFConnectionRedisDB extends INFConnectionNoRelational {
     }
     
     @Override
-    protected boolean existsEntity(String entityName) {
+    public boolean existsEntity(String entityName) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     

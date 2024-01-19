@@ -20,6 +20,7 @@ C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagun
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\generator\factory\GRTEntityDefinitionFileAbstractFactory.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\database\connection\specific\INFConnectionSQLServer.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\core\field\INFTableFieldType.java
+C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\log\Logger.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\core\CNVExecStage.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\core\validator\specific\INFStructureValidatorPostgreSQL.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\core\field\INFTableFieldFactory.java
@@ -28,11 +29,12 @@ C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagun
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\core\record\INFRecord.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\view\VIWConfigFrame.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\infra\user\UserMongo.java
+C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\log\LogDatabase.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\core\validator\INFStructureValidatorRelational.java
+C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\log\Log.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\infra\user\UserStatus.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\database\connection\INFConnectionRelational.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\generator\field\GRTEntityTableField.java
-C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\INFDefineTbUsuario.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\infra\INFDefineTbUnidadeSaude.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\database\query\INFQueryFactory.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\view\VIWGeneratorDefineCollection.java
@@ -44,6 +46,7 @@ C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagun
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\core\entity\INFEntityDefinition.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\generator\test\App.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\generator\factory\GRTEntityDefinitionTableFileFactory.java
+C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\log\AppTeste.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\database\query\INFQuery.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\core\entity\INFEntityDefinitionImpl.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\database\manager\INFConnectionProperties.java
@@ -55,11 +58,13 @@ C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagun
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\core\validator\INFStructureValidator.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\generator\field\GRTEntityField.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\core\field\INFCollectionFieldImpl.java
+C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\log\LogData.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\infra\user\TesteMongo.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\core\entity\INFEntityClassBuilder.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\database\pool\INFConnectionPool.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\generator\factory\GRTEntityDefinitionCollectionFileFactory.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\core\field\INFTableField.java
+C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\log\LogArchive.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\database\connection\specific\INFConnectionMongoDB.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\generator\file\GRTEntityDefinitionCollectionFile.java
 C:\Users\Matheus\OneDrive - UDESC Universidade do Estado de Santa Catarina\Bagunça\Documentos\NetBeansProjects\data-fusion-framework\src\main\java\br\com\datafusion\infra\INFDefineTbAtendimento.java

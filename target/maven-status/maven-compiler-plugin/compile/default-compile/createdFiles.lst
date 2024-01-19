@@ -6,9 +6,11 @@ br\com\datafusion\database\manager\INFConnectionManager.class
 br\com\datafusion\view\FormularioMapeamentoSwing$1.class
 br\com\datafusion\view\VIWLoginFrame.class
 br\com\datafusion\database\connection\specific\INFConnectionMySQL.class
+br\com\datafusion\log\LogData.class
 br\com\datafusion\core\validator\INFStructureValidator.class
 br\com\datafusion\view\VIWConfigFrame$3.class
 br\com\datafusion\database\connection\specific\INFConnectionOracle.class
+br\com\datafusion\log\LogDatabase.class
 br\com\datafusion\core\field\INFTableFieldFactory.class
 br\com\datafusion\database\query\INFQueryNoRelational.class
 br\com\datafusion\core\CNVExecStage.class
@@ -17,13 +19,13 @@ br\com\datafusion\database\query\INFQueryRelational.class
 br\com\datafusion\infra\user\MongoConnection.class
 br\com\datafusion\infra\INFDefineTbUnidadeSaude.class
 br\com\datafusion\view\FormularioMapeamentoSwing$2.class
-br\com\datafusion\INFDefineTbUsuario.class
 br\com\datafusion\view\FormularioMapeamentoSwing$EstruturaCampoPanel.class
 br\com\datafusion\core\validator\specific\INFStructureValidatorPostgreSQL.class
 br\com\datafusion\database\connection\INFConnection.class
 br\com\datafusion\generator\test\App.class
 br\com\generator\view\prototipoMigracao\infra\database\exceptions\INFQueryException.class
 br\com\datafusion\core\field\INFField.class
+br\com\datafusion\log\Log.class
 br\com\datafusion\database\connection\INFConnectionFactory.class
 br\com\datafusion\generator\file\GRTEntityDefinitionFile.class
 br\com\datafusion\generator\file\GRTEntityDefinitionTableFile.class
@@ -31,6 +33,7 @@ br\com\datafusion\view\FormularioMapeamentoSwing.class
 br\com\datafusion\core\data\INFDataPackage.class
 br\com\datafusion\database\pool\INFConnectionPoolNoRelational.class
 br\com\datafusion\core\validator\INFStructureValidatorFactory$1.class
+br\com\datafusion\log\LogArchive.class
 br\com\datafusion\infra\user\UserManager.class
 br\com\datafusion\database\connection\specific\INFConnectionSQLServer.class
 br\com\datafusion\database\connection\specific\INFConnectionRedisDB.class
@@ -52,6 +55,7 @@ br\com\datafusion\infra\INFDefineTbAtendimento.class
 br\com\datafusion\database\connection\specific\INFConnectionPostgreSQL.class
 br\com\datafusion\core\field\INFFieldException.class
 br\com\datafusion\view\VIWLoginFrame$1.class
+br\com\datafusion\log\AppTeste.class
 br\com\datafusion\core\entity\INFEntityDefinitionImpl.class
 br\com\datafusion\generator\file\GRTEntityDefinitionCollectionFile.class
 br\com\datafusion\core\entity\INFEntityTableDefinition.class
@@ -82,3 +86,4 @@ br\com\datafusion\core\validator\INFStructureValidator$1.class
 br\com\datafusion\view\VIWConfigFrame.class
 br\com\datafusion\view\VIWGeneratorDefineCollection.class
 br\com\datafusion\core\entity\INFEntityTableClass.class
+br\com\datafusion\log\Logger.class

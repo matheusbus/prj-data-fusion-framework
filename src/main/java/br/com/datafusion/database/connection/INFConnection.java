@@ -22,7 +22,7 @@ public abstract class INFConnection {
 
     protected abstract void disconnect();
     protected abstract void connect();
-    protected abstract boolean existsEntity(String entityName);
+    public abstract boolean existsEntity(String entityName);
     public abstract String getPID();
 
     public INFConnection(INFConnectionPool connectionPool) {
