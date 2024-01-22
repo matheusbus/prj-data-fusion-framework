@@ -4,13 +4,12 @@
  */
 package br.com.datafusion.log;
 
-import br.com.datafusion.infra.user.UserManager;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.time.LocalDateTime;
+import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -18,14 +17,12 @@ import java.util.logging.Logger;
  *
  * @author matheus.buschermoehl
  */
-public final class LogArchive implements Log {
+public final class LogToFileCommand implements LogCommand {
 
     private static Path FILE_PATH;
     private static String FILE_NAME;
-    private static FileWriter fileWriter;
-    private static UserManager userManager;
 
-    public LogArchive() {
+    public LogToFileCommand() {
         if (FILE_PATH == null) {
             FILE_PATH = Paths.get("").toAbsolutePath();
         }
@@ -34,39 +31,28 @@ public final class LogArchive implements Log {
             FILE_NAME = "logarchive.log";
         }
 
-        if (userManager == null) {
-            userManager = UserManager.getInstance(null);
-        }
-
         FILE_PATH = FILE_PATH.resolve(FILE_NAME);
         try {
             if (!Files.exists(FILE_PATH)) {
                 // Se o arquivo não existir, cria um novo
                 Files.createFile(FILE_PATH);
             }
-            if (fileWriter == null) {
-                fileWriter = new FileWriter(FILE_NAME, true);
-            }
         } catch (IOException ex) {
-            Logger.getLogger(LogArchive.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(LogToFileCommand.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }
 
     @Override
-    public void execute() {
-        LogData logData = new LogData();
-        //logData.setMessage(message);
-        logData.setCriticality("INFO");
-        logData.setDateTime(LocalDateTime.now());
-        //logData.setUderId(userManager.getCurrentUser().getId());
-
+    public void execute(LogData logData) {
+        Objects.requireNonNull(logData, "LogData should be not null.");
+        
         try (FileWriter fileWriter = new FileWriter(FILE_PATH.toString(), true)) {
             fileWriter.write(logData.toString() + System.lineSeparator());
             fileWriter.flush();
             fileWriter.close();
         } catch (IOException ex) {
-            Logger.getLogger(LogArchive.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(LogToFileCommand.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

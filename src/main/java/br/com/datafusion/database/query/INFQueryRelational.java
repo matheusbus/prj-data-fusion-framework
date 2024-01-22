@@ -128,6 +128,25 @@ public class INFQueryRelational extends INFQuery {
         return 0;
     }
 
+    public void execDDL(String ddl) throws INFQueryException, SQLException {
+        try {
+            st = ((INFConnectionRelational) connection).getDBConnection().createStatement();
+            st.execute(ddl);
+        } catch (SQLException ex) {
+            Logger.getLogger(INFQueryRelational.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
+
+    public void execInsert(String insert) throws INFQueryException, SQLException {
+        try {
+            st = ((INFConnectionRelational) connection).getDBConnection().createStatement();
+            st.execute(insert);
+        } catch (SQLException ex) {
+            Logger.getLogger(INFQueryRelational.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
     @Override
     public void close() throws INFQueryException {
         try {

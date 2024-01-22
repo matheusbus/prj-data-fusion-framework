@@ -4,6 +4,8 @@
  */
 package br.com.datafusion.log;
 
+import java.time.LocalDateTime;
+
 
 /**
  *
@@ -11,58 +13,78 @@ package br.com.datafusion.log;
  */
 public final class Logger {
 
-    private Log logger;
+    private LogCommand command;
     private static Logger instance;
     
     public static Logger getInstance() {
-        if(instance == null) {
-            instance = new Logger();
-        }
-        
+        if(instance == null) {instance = new Logger();}
         return instance;
     }
     
-    public static Logger getInstance(Log logger) {
-        if(instance == null) {
-            instance = new Logger(logger);
-        } 
+    public static Logger getInstance(LogCommand command) {
+        if(instance == null) {instance = new Logger(command);}
         
-        if(instance.getLogger().getClass() != logger.getClass()) {
-            throw new IllegalArgumentException("The Logger class has already been initialized with another log type: "
-                    + instance.getLogger().getClass().getName()
-                    + ". The class passed for log was: " + logger.getClass().getName()
+        if(instance.getLogCommand().getClass() != command.getClass()) {
+            throw new IllegalArgumentException("The Logger(Invoker) class has already been initialized with another log command: "
+                    + instance.getLogCommand().getClass().getName()
+                    + ". The class passed for log was: " + command.getClass().getName()
             );
         }
-        
         return instance;
     }
     
-    private Logger() {
+    private Logger() {}
+    
+    private Logger(LogCommand logger) {setLogCommand(logger);}
+    
+    public void setLogCommand(LogCommand command) {this.command = command;}
+
+    public LogCommand getLogCommand() {return command;}
+
+    public void logInfo(String message) throws Exception {
+        LogData logData = new LogData();
+        logData.setMessage(message);
+        logData.setCriticality("INFO");
+        logData.setDateTime(LocalDateTime.now());
+        //logData.setUderId(userManager.getCurrentUser().getId());
         
-    }
-    
-    private Logger(Log logger) {
-        setLogger(logger);
-    }
-    
-    public void withLoggerType(Log logger) {
-        setLogger(logger);
-    }
-
-    public void setLogger(Log logger) {
-        this.logger = logger;
-    }
-
-    public Log getLogger() {
-        return logger;
-    }
-
-    public void log(String message) throws Exception {
-        if (logger != null) {
-            logger.execute();
+        if (command != null) {
+            command.execute(logData);
         } else {
-            throw new Exception("The logger type is null.");
+            throw new Exception("The log command is null.");
+        }
+    }
+    
+    public void logWarning(String message) throws Exception {
+        LogData logData = new LogData();
+        logData.setMessage(message);
+        logData.setCriticality("WARNING");
+        logData.setDateTime(LocalDateTime.now());
+        //logData.setUderId(userManager.getCurrentUser().getId());
+        
+        if (command != null) {
+            command.execute(logData);
+        } else {
+            throw new Exception("The log command is null.");
+        }
+    }
+    
+    public void logCritical(String message) throws Exception {
+        LogData logData = new LogData();
+        logData.setMessage(message);
+        logData.setCriticality("CRITICAL");
+        logData.setDateTime(LocalDateTime.now());
+        //logData.setUderId(userManager.getCurrentUser().getId());
+        
+        if (command != null) {
+            command.execute(logData);
+        } else {
+            throw new Exception("The log command is null.");
         }
     }
 
+    public void withLogCommand(LogCommand command) {
+        setLogCommand(command);
+    }
+    
 }

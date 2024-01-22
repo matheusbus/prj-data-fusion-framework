@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package  br.com.datafusion.log;
+package br.com.datafusion.log;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -59,6 +59,10 @@ public class LogData {
 
     public void setCriticality(String criticality) {
         this.criticality = criticality;
+    }
+    
+    public String getFormattedDateTime() {
+        return FORMATTER.format(getDateTime());
     }
 
     @Override

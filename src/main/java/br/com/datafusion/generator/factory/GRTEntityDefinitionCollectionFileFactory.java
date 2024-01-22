@@ -12,7 +12,7 @@ import java.nio.file.Paths;
  *
  * @author Matheus
  */
-public class GRTEntityDefinitionCollectionFileFactory implements GRTEntityDefinitionFileAbstractFactory {
+public class GRTEntityDefinitionCollectionFileFactory extends GRTEntityDefinitionFileAbstractFactory {
     
     @Override
     public GRTEntityDefinitionCollectionFile getEntityDefinitionFile(String entityName) {

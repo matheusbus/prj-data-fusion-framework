@@ -13,7 +13,7 @@ import java.nio.file.Paths;
  *
  * @author Matheus
  */
-public class GRTEntityDefinitionTableFileFactory implements GRTEntityDefinitionFileAbstractFactory {
+public class GRTEntityDefinitionTableFileFactory extends GRTEntityDefinitionFileAbstractFactory {
 
     @Override
     public GRTEntityDefinitionFile getEntityDefinitionFile(String entityName) {
@@ -22,7 +22,4 @@ public class GRTEntityDefinitionTableFileFactory implements GRTEntityDefinitionF
         
         return new GRTEntityDefinitionTableFile(classPath, className);
     }
-
-    
-    
 }

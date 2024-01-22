@@ -5,8 +5,12 @@
 package br.com.datafusion.core.validator;
 
 import br.com.datafusion.core.entity.INFEntityClass;
+import br.com.datafusion.core.entity.INFEntityCollectionClass;
 import br.com.datafusion.core.entity.INFEntityTableClass;
+import br.com.datafusion.core.validator.specific.INFStructureValidatorMongoDB;
+import br.com.datafusion.core.validator.specific.INFStructureValidatorMySQL;
 import br.com.datafusion.core.validator.specific.INFStructureValidatorPostgreSQL;
+import br.com.datafusion.core.validator.specific.INFStructureValidatorSQLServer;
 import br.com.datafusion.database.connection.INFConnectionType;
 import br.com.datafusion.database.manager.INFDatabaseType;
 
@@ -28,10 +32,19 @@ public class INFStructureValidatorFactory {
                 return validator;
             }
             case MONGODB -> {
-                throw new Exception("A fábrica de validação de estrutura ainda não implementou o banco de dados [" + dbType.toString() + "].");
+                INFStructureValidator validator = new INFStructureValidatorMongoDB(
+                        connectionType, 
+                        ((INFEntityCollectionClass) entityClass).getCollectionName());
+                validator.setFields(((INFEntityCollectionClass) entityClass).getFields());
+                return validator;
             }
             case MYSQL -> {
-                throw new Exception("A fábrica de validação de estrutura ainda não implementou o banco de dados [" + dbType.toString() + "].");
+                INFStructureValidator validator = new INFStructureValidatorMySQL(
+                        connectionType, 
+                        ((INFEntityTableClass) entityClass).getSchemaName(), 
+                        ((INFEntityTableClass) entityClass).getTableName());
+                validator.setFields(((INFEntityTableClass) entityClass).getFields());
+                return validator;
             }
             case ORACLE -> {
                 throw new Exception("A fábrica de validação de estrutura ainda não implementou o banco de dados [" + dbType.toString() + "].");
@@ -40,7 +53,12 @@ public class INFStructureValidatorFactory {
                 throw new Exception("A fábrica de validação de estrutura ainda não implementou o banco de dados [" + dbType.toString() + "].");
             }
             case SQLSERVER -> {
-                throw new Exception("A fábrica de validação de estrutura ainda não implementou o banco de dados [" + dbType.toString() + "].");
+                INFStructureValidator validator = new INFStructureValidatorSQLServer(
+                        connectionType, 
+                        ((INFEntityTableClass) entityClass).getSchemaName(), 
+                        ((INFEntityTableClass) entityClass).getTableName());
+                validator.setFields(((INFEntityTableClass) entityClass).getFields());
+                return validator;
             }
             default -> {
                 throw new Exception("O tipo de banco de dados passado não existe na definição do migrador.");

@@ -101,4 +101,11 @@ public abstract class INFConnectionRelational extends INFConnection {
         this.autoCommit = autoCommit;
     }
 
+    @Override
+    public final boolean isRelational() {
+        return true;
+    }
+    
+    
+
 }

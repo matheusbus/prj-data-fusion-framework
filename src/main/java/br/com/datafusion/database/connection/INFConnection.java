@@ -23,6 +23,7 @@ public abstract class INFConnection {
     protected abstract void disconnect();
     protected abstract void connect();
     public abstract boolean existsEntity(String entityName);
+    public abstract boolean isRelational();
     public abstract String getPID();
 
     public INFConnection(INFConnectionPool connectionPool) {

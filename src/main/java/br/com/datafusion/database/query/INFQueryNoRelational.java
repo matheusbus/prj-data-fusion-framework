@@ -18,6 +18,10 @@ public class INFQueryNoRelational extends INFQuery {
         super(connection);
     }
 
+    public void createCollection(String collectionName) {
+        
+    }
+    
     @Override
     public void open() throws INFQueryException {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody

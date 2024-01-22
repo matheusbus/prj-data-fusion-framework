@@ -2,42 +2,36 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package br.com.datafusion.database.connection;
+package br.com.datafusion.core.validator.specific;
 
-import br.com.datafusion.database.pool.INFConnectionPool;
+import br.com.datafusion.core.validator.INFStructureValidatorRelational;
+import br.com.datafusion.database.connection.INFConnectionType;
 
 /**
  *
- * @author matheus.buschermoehl
+ * @author Matheus
  */
-public abstract class INFConnectionNoRelational extends INFConnection {
+public class INFStructureValidatorMySQL extends INFStructureValidatorRelational {
 
-    public INFConnectionNoRelational(INFConnectionPool connectionPool) {
-        super(connectionPool);
+    public INFStructureValidatorMySQL(INFConnectionType connectionType, String schemaName, String tableName) throws Exception {
+        super(connectionType);
+        this.schemaName = schemaName;
+        this.tableName = tableName;
     }
 
     @Override
-    protected void disconnect() {
+    protected String getSQLScanFields() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    protected void connect() {
+    protected boolean entityExists() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public String getPID() {
+    public boolean correctStructure() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-
-    @Override
-    public final boolean isRelational() {
-        return false;
-    }
-    
-    
-
-    
     
 }

@@ -10,8 +10,7 @@ import br.com.datafusion.generator.file.GRTEntityDefinitionFile;
  *
  * @author Matheus
  */
-public interface GRTEntityDefinitionFileAbstractFactory {
-    
-    public GRTEntityDefinitionFile getEntityDefinitionFile(String className);
-    
+public abstract class GRTEntityDefinitionFileAbstractFactory {
+
+    public abstract GRTEntityDefinitionFile getEntityDefinitionFile(String entityName);
 }
