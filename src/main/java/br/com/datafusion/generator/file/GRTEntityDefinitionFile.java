@@ -23,7 +23,7 @@ public abstract class GRTEntityDefinitionFile {
     protected final StringBuilder classBody;
     protected List<GRTEntityField> fields = new ArrayList<>();
 
-    public abstract void createBody();
+    protected abstract void createBody();
 
     public abstract void addEntityName(String... args);
 

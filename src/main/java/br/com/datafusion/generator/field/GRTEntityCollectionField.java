@@ -8,7 +8,7 @@ package br.com.datafusion.generator.field;
  *
  * @author Matheus
  */
-public class GRTEntityCollectionField extends GRTEntityField {
+public class GRTEntityCollectionField extends GRTEntityField implements Cloneable {
 
     public GRTEntityCollectionField() {
     }
@@ -17,8 +17,14 @@ public class GRTEntityCollectionField extends GRTEntityField {
         super(fieldName, fieldType, identifier, Mandatory);
     }
 
-
-    
-    
+    @Override
+    public GRTEntityCollectionField clone() throws CloneNotSupportedException {
+        GRTEntityCollectionField cloneField = new GRTEntityCollectionField();
+        cloneField.setFieldName(getFieldName());
+        cloneField.setFieldType(getFieldType());
+        cloneField.setIdentifier(isIdentifier());
+        cloneField.setMandatory(isMandatory());
+        return (GRTEntityCollectionField) super.clone();
+    }
     
 }

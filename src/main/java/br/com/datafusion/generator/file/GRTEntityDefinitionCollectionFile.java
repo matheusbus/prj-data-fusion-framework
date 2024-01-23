@@ -18,6 +18,7 @@ public class GRTEntityDefinitionCollectionFile extends GRTEntityDefinitionFile {
     
     public GRTEntityDefinitionCollectionFile(Path path, String className) {
         super(path, className);
+        this.collectionName = className;
     }
 
     @Override
@@ -63,7 +64,5 @@ public class GRTEntityDefinitionCollectionFile extends GRTEntityDefinitionFile {
     public void addField(String fieldName, String fieldType, boolean isPrimaryKey, boolean isMandatory, Integer length) {
         GRTEntityCollectionField field = new GRTEntityCollectionField(fieldName, fieldType, isMandatory, isMandatory);
         this.fields.add(field);
-    }
-    
-    
+    } 
 }

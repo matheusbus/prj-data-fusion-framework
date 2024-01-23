@@ -8,7 +8,7 @@ package br.com.datafusion.generator.field;
  *
  * @author Matheus
  */
-public abstract class GRTEntityField {
+public abstract class GRTEntityField implements Cloneable {
     
     private String fieldName;
     private String fieldType;
